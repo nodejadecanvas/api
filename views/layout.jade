@@ -1,0 +1,52 @@
+doctype html
+html(lang='ru')
+   head
+      meta(charset='utf-8')
+      title HTML5
+      meta(name='description', content='1,2,3')
+      meta(name='keywords', content='')
+      meta(name='author', content='')
+      link(href='media/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+      link(href='media/css/style.css', rel='stylesheet')
+   body
+      header#header
+         img#logo(src='media/img/logo.png', title='', alt='')
+         h1#logotext HTML5
+         br(style='clear: both;')
+      nav.topmenu
+         a(href='#') Главная
+         a(href='#') Доставка
+         a(href='#') Услуги
+         a(href='#') Товары
+         a(href='#') Контакты
+      section.main.clearfix
+         nav.col-md-2
+            a.btn.btn-block.btn-warning(href='canvas') Canvas
+            a.btn.btn-block.btn-warning(href='anketa') Формы
+            a.btn.btn-block.btn-warning(href='canvas1') Canvas more
+            a.btn.btn-block.btn-warning(href='#') Разработка сайтов
+            a.btn.btn-block.btn-warning(href='#') Разработка сайтов
+         section.col-md-8
+           block content
+         aside.col-md-2
+            table(width='100%', height='180', style='background-color:#f2f2f2; border: #cccccc 1px solid; font-family:Tahoma; font-size:12px; color:#000000;', cellpadding='2', cellspacing='0')
+               tr
+                  td
+                     a(href='http://6.pogoda.by/26850', style='font-family:Tahoma; font-size:12px; color:#003399;', title='Погода Минск на 6 дней - Гидрометцентр РБ', target='_blank') Погода Минск
+               tr
+                  td
+                     table(width='100%', height='100%', style='background-color:#f2f2f2; font-family:Tahoma; font-size:12px; color:#000000;', cellpadding='0', cellspacing='0')
+                        tr
+                           td
+                              script(type='text/javascript', charset='windows-1251', src='http://pogoda.by/meteoinformer/js/26850_3.js')
+               tr
+                  td(align='right')
+                     | Информация сайта 
+                     a(href='http://www.pogoda.by', target='_blank', style='font-family:Tahoma; font-size:12px; color:#003399;') pogoda.by
+      #footer
+         | © Все права защищены. 
+         a(href='mailto:bolik2@list.ru')
+            | bolik2
+            span @
+            | list.ru
+    block scripts

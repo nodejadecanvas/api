@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#header {
+	height: 200px;
+	background: url('../img/fon.jpg');
+}
+#logo {
+float: left;
+margin: 20px;
+}
+#logotext {
+float: right;
+text-shadow: 1px 1px 1px #fff;
+margin: 20px;
+}
+.topmenu {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+}
+.topmenu a {
+	flex: 1;
+	display: block;
+	font-size: 16px;
+	color: #fff;
+	background: gray;
+	text-align: center;
+	padding: 10px 0;
+	text-decoration: none;
+	border-right: 1px #fff solid;
+}
+.topmenu a:last-child {
+	border-right:0;
+}
+.topmenu a:hover {
+	background: #ed1b24;
+}
+.main {
+	padding: 10px 0;
+}
+.main > nav > a {
+	background: #ed1b24;
+	border-color: #ed1b24;
+	
+}
+.main > nav > a:hover {
+	background: gray;
+	border-color: gray;
+}
+#footer {
+	background: gray;
+	padding: 50px 0;
+	text-align: center;
+}
+#footer a {
+	color: #fff;
+	text-decoration: none;
+}
+input:invalid {border: 1px solid red;}
+
+#canvas {
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+#canvas1 {
+	border: 1px solid #ed1b24;
+}
+#canvas2 {
+	background: url('../img/see.jpg') no-repeat center center;
+	width: 800px;
+	height: 688px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.topmenu {
+		flex-direction: column;
+	}
+	#logo {
+		display: none;
+	}
+	#header {
+		height: 100px;
+	}
+
+}

@@ -1,0 +1,29 @@
+extend layout
+block scripts
+    script(src='media/js/anketa1.js')
+  //
+    script(src='media/js/anketa.js')
+block content
+    h2 Добро пожаловать на сайт компании Nintonendo
+    article.content
+      form#form_all
+        .form-group
+          label(for='exampleInputName') Имя
+          input#exampleInputName.form-control(type='text', placeholder='Name', name='name', oninput='validation(this)')
+        .form-group
+          label(for='exampleInputSurname') Фамилия
+          input#exampleInputSurname.form-control(type='text', placeholder='Surname', name='surname', oninput='validation(this)')
+        //
+          .form-group
+            label(for='exampleInputSNP') ФИО
+            input#exampleInputSNP.form-control(type='text', placeholder='ФИО', name='SNP', pattern='[A-Яа-я]{2,12} [A-Яа-я]{4,} [A-Яа-я]{6,}', required) 
+        .form-group
+          label(for='exampleInputAd/ress') Адрес
+          input#exampleInputAdress.form-control(type='text', placeholder='Adress', oninput='validation_adress(this)')
+        .form-group
+          label(for='exampleInputEmail') E-mail
+          input#exampleInputAdress.form-control(type='email', placeholder='E-mail', oninput='validation_email(this)')
+        .form-group
+          label(for='exampleInputdate') Дата рождения
+          input#exampleInputName.form-control(type='date', placeholder='Дата рождения', name='day', oninput='validation_date(this)')
+        button.btn.btn-default#send Submit
